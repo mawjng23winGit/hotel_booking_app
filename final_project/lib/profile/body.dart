@@ -1,3 +1,4 @@
+import 'package:final_project/feature_in_progress/featureIn_progress.dart';
 import 'package:final_project/profile/log_out.dart';
 import 'package:final_project/profile/profile_pic.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +20,8 @@ class Body extends StatelessWidget {
             showDialog(
               context: context,
               builder: (BuildContext context) {
-                // return const FeatureInProgressWidget();
-                return const Text('Feature in progress');
+                return const FeatureInProgressWidget();
+                // return const Text('Feature in progress');
               },
             );
           },
