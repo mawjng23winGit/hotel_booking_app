@@ -9,8 +9,9 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const SizedBox(height: 30),
         const ProfilePic(),
-        const SizedBox(height: 20),
+        const SizedBox(height: 30),
         ProfileMenu(
           icon: Icons.person,
           text: 'My Account',
