@@ -1,3 +1,4 @@
+import 'package:final_project/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,6 +12,13 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
+  final List<Widget> _children = [
+    const HomeS(),
+    const BookingS(),
+    const MapS(),
+    const ProfileS(),
+  ];
+  
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -19,26 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    // Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Container(
-        margin: EdgeInsets.only(top: size.height * 0.25),
-        color: Colors.white,
-        child: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                // _HeaderSection(),
-                // _SearchCard(),
-                // SizedBox(height: 20),
-                // _NearbyHotels(),
-              ],
-            ),
-          ),
-        ),
-      ),
+      body: _children[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -46,12 +38,12 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.map),
-            label: 'Maps',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.book_online),
             label: 'Booking',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.map),
+            label: 'Maps',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
@@ -63,6 +55,53 @@ class _HomeScreenState extends State<HomeScreen> {
         unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
       ),
+    );
+  }
+}
+
+class HomeS extends StatelessWidget {
+  const HomeS({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text('Home Screen'),
+    );
+  }
+}
+
+class BookingS extends StatelessWidget {
+  const BookingS({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text('Movie Screen'),
+    );
+  }
+}
+
+class MapS extends StatelessWidget {
+  const MapS({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text('Search Screen'),
+    );
+  }
+}
+
+class ProfileS extends StatelessWidget {
+  const ProfileS({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const ProfileScreen(),
     );
   }
 }
