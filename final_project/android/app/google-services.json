@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "513116202253",
+    "project_id": "booking-hotel-73431",
+    "storage_bucket": "booking-hotel-73431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513116202253:android:360f31d015727c22abfc44",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513116202253-uh1qlodh6275il9pa8bnh309lv57kc42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMy_YcC7PIi5c9RvXV4NF8RVKd-Q0ft8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513116202253-uh1qlodh6275il9pa8bnh309lv57kc42.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "513116202253-mbkf89qg27c0p644frpsuf0qdevpqltp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.booking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513116202253:android:836d0b8967c4151eabfc44",
+        "android_client_info": {
+          "package_name": "com.example.your_app_name"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513116202253-uh1qlodh6275il9pa8bnh309lv57kc42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMy_YcC7PIi5c9RvXV4NF8RVKd-Q0ft8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513116202253-uh1qlodh6275il9pa8bnh309lv57kc42.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "513116202253-mbkf89qg27c0p644frpsuf0qdevpqltp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.booking"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

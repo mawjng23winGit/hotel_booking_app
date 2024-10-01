@@ -1,3 +1,4 @@
+import 'package:final_project/home/home_view.dart';
 import 'package:final_project/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -64,8 +65,11 @@ class HomeS extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Home Screen'),
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const Home(),
     );
   }
 }
